@@ -43,7 +43,7 @@ foreach ($result as $info) {
                 <td>$info->topsnelheid</td>
                 <td>
                     <a href='delete.php?Id=$info->Id'>
-                        <img src='img/b_drop.png' alt='kruis'>
+                        <img src='https://cdn.pixabay.com/photo/2014/03/25/15/19/cross-296507_960_720.png' alt='kruis' width = 10px height = 10px>
                     </a>
                 </td>
               </tr>";
@@ -65,13 +65,13 @@ foreach ($result as $info) {
 </head>
 
 <body>
-    <h3>De vijf rijkste mensen ter wereld</h3>
+    <h3>autos</h3>
     <table border='1'>
         <thead>
             <th>id</th>
-            <th>Vermogen</th>
-            <th>Leeftijd</th>
-            <th>Bedrijf</th>
+            <th>merk</th>
+            <th>model</th>
+            <th>topsnelheid</th>
             <th>Delete</th>
         </thead>
         <tbody>
