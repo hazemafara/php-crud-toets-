@@ -65,7 +65,7 @@ foreach ($result as $info) {
 </head>
 
 <body>
-    <h3>top vijf duurste autos</h3>
+    <h3>de top vijf duurste autos</h3>
     <table border='1'>
         <thead>
             <th>merk</th>
