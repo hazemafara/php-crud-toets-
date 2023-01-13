@@ -40,6 +40,7 @@ foreach ($result as $info) {
                 <td>$info->merk</td>
                 <td>$info->model</td>
                 <td>$info->topsnelheid</td>
+                <td>$info->prijs</td>
                 <td>
                     <a href='delete.php?Id=$info->Id'>
                         <img src='https://cdn.pixabay.com/photo/2014/03/25/15/19/cross-296507_960_720.png' alt='kruis' width = 10px height = 10px>
@@ -60,16 +61,17 @@ foreach ($result as $info) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RichestPeople</title>
+    <title>autos</title>
 </head>
 
 <body>
-    <h3>autos</h3>
+    <h3>top vijf duurste autos</h3>
     <table border='1'>
         <thead>
             <th>merk</th>
             <th>model</th>
             <th>topsnelheid</th>
+            <th>Prijs</th>
             <th>Delete</th>
         </thead>
         <tbody>
