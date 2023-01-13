@@ -9,7 +9,7 @@ try {
     $conn = new PDO("mysql:host=$servername;dbname=php-pdo-crud-toets", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully";
+    echo "";
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
@@ -37,7 +37,6 @@ $result = $statement->fetchAll(PDO::FETCH_OBJ);
 $rows = "";
 foreach ($result as $info) {
     $rows .= "<tr>
-                <td>$info->Id</td>
                 <td>$info->merk</td>
                 <td>$info->model</td>
                 <td>$info->topsnelheid</td>
@@ -68,7 +67,6 @@ foreach ($result as $info) {
     <h3>autos</h3>
     <table border='1'>
         <thead>
-            <th>id</th>
             <th>merk</th>
             <th>model</th>
             <th>topsnelheid</th>
